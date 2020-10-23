@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 템플릿</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="back_Wrap">
+        <div class="headerWrap">
+            <header>
+                <h1><a href="#">sherlock<br>Homes</a></h1>
+                <nav id="gnb">
+                    <h2 class="hidden">회원메뉴</h2>
+                    <ul>
+                        <li id="join"><a href="#">회원가입</a></li>
+                        <li id="login"><a href="#">로그인</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <div id="formWrap">
+            <form>
+                <fieldset>
+                    <legend class="hidden">검색</legend>
+                    <label for="location" class="hidden">위치</label>
+                    <input type="text" id="location" value="도시 또는 호텔 이름">
+                    <label for="checkIn" class="hidden">체크인</label>
+                    <input type="date" id="checkIn" data-placeholder="체크인">
+                    <label for="checkOut" class="hidden">체크아웃</label>
+                    <input type="date" id="checkOut" data-placeholder="체크아웃">
+                    <label for="people" class="hidden">인원</label>
+                    <input type="number" id="people">
+                    <label for="adult" class="hidden">성인</label> 
+                    <input type="number" id="adult" class="hidden">
+                    <label for="child" class="hidden">어린이</label>
+                    <input type="number" id="child" class="hidden">
+                    <label for="infant" class="hidden">유아</label>
+                    <input type="number" id="infant" class="hidden">
+                    <input type="button" value="검색" id="button">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+        <div><jsp:include page="/WEB-INF/views/${view}.jsp"></jsp:include></div>
+        <div id="footerWrap">
+            <footer>
+                    <dl>
+                        <dt>이 페이지는 포트폴리오를 위해서 제작되었습니다.</dt>
+                        <dd>상호 및 서비스는 실제와 무관합니다.</dd>
+                    </dl>
+                    <br>
+                        <br>
+                        <hr>
+                        <p>© 2020 portfolio, Inc. All rights reserved</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+@charset "utf-8";
+@font-face { font-family: 'NIXGONL-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, figure, form, fieldset, input, table, th, td { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: #333;}
+body { font-family: 'Noto Serif KR', serif;  }
+.hidden { position: absolute; left: -9999px;}
+
+/* 헤더 */
+header h1 a {display: inline-block; font-family: 'NIXGONL-Vb';  font-size: 30px; color:#fff;}
+#back_Wrap { margin: 0 auto; width:100%; background: url(../images/main.jpg);background-repeat: no-repeat; background-size: cover;}
+#back_Wrap:after{  content:""; display: block; padding-bottom:20%;}            
+.headerWrap { width:1200px; height: 100px; margin: 0 auto;}
+header h1 {display: inline-block; }
+header ul li{ display: inline-block; }
+
+/*gnb*/
+#gnb { float: right;}
+#gnb ul { float: left;}
+#gnb li a {margin-right: 30px; font-size: 18px; color: #fff;}
+
+/*search*/
+#formWrap {clear: both; width: 1200px; margin: 0 auto; }
+#formWrap input { border:none; outline:none; height:34px; vertical-align:middle; 
+border-radius:22px; width:220px; box-sizing:border-box; padding:0 10px; }
+#checkIn::before {content: attr(data-placeholder); width: 100%;}
+#checkOut::before {content: attr(data-placeholder); width: 100%;}
+#formWrap input[type="button"]{ background:#821752;
+                    color:#fff; width:100px; cursor:pointer; }
+#dropDown { color: #fff;}
+
+/*섹션 1*/
+#section_h { width: 100%; height: 700px;}
+#content1 { width: 1200px; height: auto; margin: 0 auto; 
+            display: grid; grid-template-columns: auto auto auto auto; grid-gap: 20px; }
+#content a { display: block; width: 100%; height: 100%;}
+#content1 h2 { grid-column: 1 / span 4; text-align: center; padding: 40px;}
+.hotels { width: 300px; height:400px; background-color: #fff; border-radius: 10px;
+         box-shadow: 0px 0px 10px #808080; margin: 0 auto;}
+@media screen and (max-width:100%) {
+    header { width: 100%;}
+    section { width: 100%;}
+}
+/* 섹션 3 */
+.section_t {width: 100%; background-color:#010a43; height: 900px;}
+.section_wrap { width: 1200px; margin: 0 auto; }
+.section_wrap h2 { color: #fff; padding-bottom:30px; padding-top:30px;}
+#themaWrap{ margin: 0 auto; display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap:70px;
+            column-gap: 20px;
+            height: 700px;
+            width: 100%;}
+#themaWrap div a {display:block; text-decoration:none;
+                    width: 100%; height: 100%;}
+#themaWrap div a p { background-color:#43658b; width: 100%; height: 50px;
+                    border-radius: 0 0 10px 10px; position: relative; top: 100%; color: #fff; text-indent: 10px;}
+.grid {  border-radius: 10px 10px 0 0; display: block;}
+.item1 { grid-row: 1 / span 2; grid-column: 1 / span 3; background-image: url(../images/room1.jpg);}
+.item2{ grid-column: 4 /span 1; background-image: url(../images/room2.jpg);}
+.item3{ grid-column: 5/ spanr 1; background-image: url(../images/room4.jpg);}
+.item4 { grid-column: 4 / span 2; background-image: url(../images/room6.jpg); background-repeat: no-repeat; background-size:cover;}
+
+/* footer*/
+#footerWrap { width: 100%; background-color:#f5f5f5;  height: auto;}
+#footerWrap:after{ content: ""; display: block; padding-top: 10%;}    
+footer {  width: 1200px; margin: 0 auto; color:#010a43; padding :30px 30px 0 0;}
+
+/*모달창*/
+
+.modal{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    z-index: 99999;
+}
+.md_overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%; height: 100%;
+    position: absolute;
+}
+.md_content {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    padding:0;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
+}
+.join{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    z-index: 9999999;
+}
+.join_overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%; height: 100%;
+    position: absolute;
+}
+.join_content {
+    width: 500px;
+    height: 500px;
+    padding:0;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.scrollDisable {
+    height: 100%;
+    overflow: hidden;
+}
+
+/*로그인창*/
+.md_content .login_t { font-family: 'NIXGONL-Vb'; font-size:40px; font-weight: 800; text-align: center; margin-bottom: 5%;}
+.close { text-align: right;}
+.close i {font-size: 50px;}
+
+.check a { color: #821752;}
+#loginFrm { width: 100%;}
+#loginFrm #user_id {
+    
+    font-family: 'NIXGONL-Vb';
+    padding: 0.8em 0.3em;
+    width: 55%;
+    border: none;
+    display: block; border-bottom: 2px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    margin-left: 15%;
+    outline:none; 
+}
+#loginFrm input[type=password] {
+    
+    font-family:'courier,serif';
+    padding: 0.8em 0.3em;
+    width: 55%;
+    border: none;
+    display: inline; border-bottom: 2px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    margin-left: 50px;
+    outline:none; 
+}
+input[type=password]::placeholder {
+    font-family: 'NIXGONL-Vb';
+}
+
+.check { text-align: center;}
+
+.login-button {
+    
+    float: right;
+    background: #ffffff;
+    color: #999999;
+    padding: 11px 0;
+    width: 60px;
+    height: 60px;
+    margin-top: -10px;
+    margin-right: 50px;
+    border: 5px solid #efefef;
+    border-radius: 50%;
+    transition: all ease-in-out 500ms;
+    outline:none;
+    display: inline;
+  }
+  .login-button:hover {
+    cursor: pointer;
+    outline:none; 
+    color: #555555;
+    transform: rotate(450deg);
+  }
+
+  /*join*/
+.join_content .join_t { font-family: 'NIXGONL-Vb'; font-size:40px; font-weight: 800; text-align: center; margin-bottom: 5%;}
+.close { text-align: right;}
+.close i {font-size: 50px;}
+.check a { color: #821752;}
+#joinFrm { width: 100%;}
+
+#joinFrm #join_id {
+    
+    font-family: 'NIXGONL-Vb';
+    padding: 0.8em 0.3em;
+    width:33%;
+    border: none;
+    display: inline; border-bottom: 2px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -13%;
+    align-items: center;
+    outline:none; 
+}
+
+#id_check {
+    cursor:pointer;
+    background-color: none;
+    font-family: 'NIXGONL-Vb';
+    font-size:16px;
+    font-weight: 600;
+    width: 20%;
+    border: none;
+    display: inline;
+    outline:none; 
+    padding: 8px;
+ 
+}
+
+#joinFrm #user_email {
+    font-family: 'NIXGONL-Vb';
+    padding: 0.8em 0.3em;
+    width: 57%;
+    border: none;
+    display: block; border-bottom: 2px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    margin-left: 15%;
+    outline:none; 
+}
+#joinFrm #user_nm {
+    font-family: 'NIXGONL-Vb';
+    padding: 0.8em 0.3em;
+    width: 57%;
+    border: none;
+    display: block; border-bottom: 2px solid grey;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    margin-left: 15%;
+    outline:none; 
+}
+
+#join_password, #join_passwordChk
+                 { 
+                font-family:'courier,serif';
+                padding: 0.8em 0.3em;
+                width: 56%;
+                border: none;
+                border-bottom: 2px solid grey;
+                font-size: 18px;
+                font-weight: 600;
+                align-items: center;
+                
+                outline:none; }
+#join_password { margin-left: -13%;}
+#join_passwordChk {  display: block;
+    margin-left: 15%;}
+
+
+
+#user_agree {
+    margin-top: 10%;
+    margin-left: -15%;
+    width: 30;
+}
+
+
+.join-button {
+    float: right;
+    background: #ffffff;
+    color: #999999;
+    padding: 11px 0;
+    width: 60px;
+    height: 60px;
+    margin-top: -115px;
+    margin-right: 40px;
+    border: 5px solid #efefef;
+    border-radius: 50%;
+    transition: all ease-in-out 500ms;
+    outline:none;
+    display: inline;
+  }
+  .join-button:hover {
+    cursor: pointer;
+    outline:none; 
+    color: #555555;
+    transform: rotate(450deg);
+  }
+.hidden {
+    display: none;
+}
+
+
+#msg { width: 80%; color:#821752;
+    font-size: 15px;}
+

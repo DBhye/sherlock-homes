@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔 디테일</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="back_Wrap">
+            <div class="headerWrap">
+                <header>
+                    <h1><a href="#">sherlock<br>Homes</a></h1>
+                    <nav id="gnb">
+                        <h2 class="hidden">회원메뉴</h2>
+                        <ul>
+                            <li id="join"><a href="#">회원가입</a></li>
+                            <li id="login"><a href="#">로그인</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+
+            <div id="formWrap">
+                <form>
+                    <fieldset>
+                        <legend class="hidden">검색</legend>
+                        <label for="location" class="hidden">위치</label>
+                        <input type="text" id="location" value="도시 또는 호텔 이름">
+                        <label for="checkIn" class="hidden">체크인</label>
+                        <input type="date" id="checkIn" data-placeholder="체크인">
+                        <label for="checkOut" class="hidden">체크아웃</label>
+                        <input type="date" id="checkOut" data-placeholder="체크아웃">
+                        <label for="people" class="hidden">인원</label>
+                        <input type="number" id="people">
+                        <label for="adult" class="hidden">성인</label> 
+                        <input type="number" id="adult" class="hidden">
+                        <label for="child" class="hidden">어린이</label>
+                        <input type="number" id="child" class="hidden">
+                        <label for="infant" class="hidden">유아</label>
+                        <input type="number" id="infant" class="hidden">
+                        <input type="button" value="검색" id="button">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="detail" class="grid">
+            <section id="infoWrap" class="grid item1">
+                <div id="info">
+                <h2>셜록 호텔</h2>
+                <p>대구 중구 중앙대로 366 9</p>
+                </div>
+                <ul>
+                    <li id="photo"><img src="images/room1.jpg" alt=""></li>
+                    <li id="star"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i></li>
+                    <li id="score"><i class="material-icons">sentiment_very_satisfied</i>4.8<span>/5</span></li>
+                    <li id="wifi"><i class="material-icons">wifi</i>무선인터넷</li>
+                    <li id="parking"><i class="material-icons">time_to_leave</i>무료 주차</li>
+                    <li id="breakfast"><i class="material-icons">restaurant</i>조식 제공</li>
+                </ul>
+            </section>
+
+            <section class="grid item2">
+                <ul>
+                    <li>
+                        <h3 class="hidden">일반실</h3>
+                            <ul id="standard">
+                                <li class="room_photo"><img src="images/room3.jpg" alt=""></li>
+                                <li class="room_nm">스탠다드</li>
+                                <li class="room_people">기준 2명 / 최대 2명</li>
+                                <li class="rent">대실</li>
+                                <li class="price">₩20,000</li>
+                                <li class="lodgment">숙박</li>
+                                <li class="price" >₩50,000</li>
+                            </ul>
+                    </li>
+                    <li>
+                        <h3 class="hidden">특실</h3>
+                        
+                            <ul id="deluxe">
+                                <li class="room_photo"><img src="images/room1.jpg" alt=""></li>
+                                <li class="room_nm">디럭스</li>
+                                <li class="room_people">기준 2명 / 최대 2명</li>
+                                <li class="rent">대실</li>
+                                <li class="price">₩25,000</li>
+                                <li class="lodgment">숙박</li>
+                                <li class="price">₩70,000</li>
+                            </ul>
+                    </li>
+                </ul>
+            </section>
+        
+            <section id="option" class="gird item3">
+                <h4 class="hidden">예약안내</h4>
+                <ul>
+                    <li class="notice">숙소 공지</li>
+                    <li class="notice_content">숙소 내의 부대 시설 및 서비스는 숙소 측에 따라 사전 공지 없이 변경 될 수 있습니다.</li>
+                    <li class="notice">체크 인/체크 아웃</li>
+                    <li class="notice_content">15:00 / 11:00</li>
+                    <li class="notice">주의 사항</li>
+                    <li class="notice_content1">애완 동물 동반이 불가능 합니다.</li>
+                    <li class="notice_content2">전 객실 취사가 불가능 합니다.</li>
+                    <li class="notice_content3">예약 된 인원 초과할 시에는 추가 요금이 있습니다.</li>
+                </ul>
+            </section>
+                <div class="grid item4">
+                    <i class="material-icons" id="star_r">star</i><p>사용자 리뷰</p>
+                    <ul id="reviewWrap_1">
+                        <li class="review"><img src="images/profile.png">
+                            <ul>
+                                <li>박철민</li>
+                                <li class="review_d">2020년 3월</li>
+                                <li class="review_c">가격대비 청결하고 서비스가 좋았습니다.</li>
+                            </ul>
+                        </li>
+                        <li class="review"><img src="images/profile.png">
+                            <ul>
+                                <li>박연진</li>
+                                <li class="review_d">2020년 4월</li>
+                                <li class="review_c">쾌적하고 편안한 숙소였습니다. 다음에도 들르겠습니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <input type="button" value="리뷰 모두 보기" id="review_btn">
+                </div>
+                <div class="grid item5">
+                    <br>
+                    <ul id="reviewWrap_2" class="grid item5">
+                        <li class="review"><img src="images/profile.png">
+                            <ul>
+                                <li>이혜영</li>
+                                <li class="review_d">2020년 7월</li>
+                                <li class="review_c">접근성 편의성 다 좋았습니다</li>
+                            </ul>
+                        </li>
+                        <li class="review"><img src="images/profile.png">
+                            <ul>
+                                <li>김영희</li>
+                                <li class="review_d">2020년 9월</li>
+                                <li class="review_c">숙소가 너무 깨끗했고, 비치된 물품이 많아서 편리했습니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+        </div>
+        <div id="footerWrap">
+            <footer>
+                    <dl>
+                        <dt>이 페이지는 포트폴리오를 위해서 제작되었습니다.</dt>
+                        <dd>상호 및 서비스는 실제와 무관합니다.</dd>
+                    </dl>
+                    <br>
+                    <br>
+                    <hr>
+                    <p>© 2020 portfolio, Inc. All rights reserved</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

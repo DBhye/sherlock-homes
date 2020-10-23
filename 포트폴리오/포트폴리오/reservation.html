@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셜록홈즈</title>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reservation.css">
+</head>
+    <body>
+        <div id="container">
+            <div id="back_Wrap">
+                <div class="headerWrap">
+                    <header>
+                        <h1><a href="#">sherlock<br>Homes</a></h1>
+                        <nav id="gnb">
+                            <h2 class="hidden">회원메뉴</h2>
+                                <ul>
+                                    <li><a href="#" class="openJoin">회원가입</a></li>
+                                    <li><a href="#" id="open">로그인</a></li>
+                                </ul>
+                        </nav>
+                    </header>
+                </div>
+    
+                <div class="modal hidden">
+                    <div class="md_overlay"></div>
+                    <div class="md_content">
+                            <p class="close"><i class="material-icons" style="cursor: pointer;">clear</i></p>
+                            <p class="login_t">login</p>
+                        <form id="loginFrm">
+                            <input type="text" id="user_id" placeholder="ID">
+                            <input type="password" id="user_password" placeholder="password">
+                            <button type="submit" class="login-button"><i class="material-icons">keyboard_arrow_right</i></button>
+                        </form>
+                        <p class="check" id="check_pw">아이디/비밀번호를 잊으셨나요?<a href="#">아이디</a>/<a href="#">비밀번호찾기</a></p>
+                        <p class="check">회원가입을 안하셨나요?<a href="#" class="openJoin">회원가입</a></p>
+                    </div>
+                </div>
+
+                <div class="join hidden">
+                    <div class="join_overlay"></div>
+                    <div class="join_content">
+                            <p class="close"><i class="material-icons" style="cursor: pointer;">clear</i></p>
+                            <p class="join_t">join</p>
+                        <form id="joinFrm">
+                            <input type="text" id="join_id" placeholder="ID">
+                            <input type="button" id="id_check" value="중복확인">
+                            <input type="email" id="user_email" placeholder="e-mail">
+                            <input type="text" id="user_nm" placeholder="이름">
+                            <input type="password" id="join_password" placeholder="password">
+                            <input type="password" id="join_passwordChk" placeholder="password check">
+                            <button type="submit" class="join-button"><i class="material-icons">keyboard_arrow_right</i></button>
+                            <input type="checkbox" id="user_agree" value="agree">
+                            <label for="user_agree"><span id="agree_span"></span>개인정보 제공에 동의합니다.</label>
+                            
+                        </form>
+                        <p id="msg">아이디를 중복확인해주세요</p>
+                    </div>
+                </div>
+
+
+                <div id="formWrap">
+                    <form>
+                        <fieldset>
+                            <legend class="hidden">검색</legend>
+                            <label for="location" class="hidden">위치</label>
+                            <input type="text" id="location" value="도시 또는 호텔 이름">
+                            <label for="checkIn" class="hidden">체크인</label>
+                            <input type="date" id="checkIn" data-placeholder="체크인">
+                            <label for="checkOut" class="hidden">체크아웃</label>
+                            <input type="date" id="checkOut" data-placeholder="체크아웃">
+                            <label for="people" class="hidden">인원</label>
+                            <input type="number" id="people">
+                            <label for="adult" class="hidden">성인</label> 
+                            <input type="number" id="adult" class="hidden">
+                            <label for="child" class="hidden">어린이</label>
+                            <input type="number" id="child" class="hidden">
+                            <label for="infant" class="hidden">유아</label>
+                            <input type="number" id="infant" class="hidden">
+                            <input type="button" value="검색" id="button">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div id="reservationWrap">
+                <section class="reservation pay1">
+                    <h2>예약 확인 및 결제</h2>
+                    <table>
+                        <tr>
+                            <td colspan="2" id="address">서울시 사랑구</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="date_check">체크인</td>
+                            <td>10월26일    <br>오후 4:00 이후</td>
+                            <td rowspan="2" class="date_check">체크아웃</td>
+                            <td>10월 27일 <br>오후 12:00 까지</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="reservation pay2">
+                    <h3>예약자 정보</h3>
+                    <form>
+                        <label for="r_name">예약자 이름</label>
+                        <input type="text" id="r_name">
+                        <label for="r_phone">예약자 연락처</label>
+                        <input type="text" id="r_phone" placeholder="예약문자 발송시 필요합니다.">
+                        <input type="button" value="인증번호전송">
+                        <input type="text" id="r_number" placeholder="인증번호 6자리 입력">
+                        <input type="button" value="도보">
+                        <input type="button" value="차량">
+                    </form>
+                </section>
+                <section class="reservation pay3">
+                    <h4 class="hidden">동의및 결제</h4>
+                    <input type="checkbox" id="pay_agree">
+                    <label for="pay_agree"><span>모든 정보를 확인하였으며 동의합니다.</span></label>
+                    <button>결제하기</button>
+                </section>
+                <section class="reservation pay4">
+                    <table>
+                        <tr>
+                            <td rowspan="2"><img src="images/room1.jpg" alt=""></td>
+                            <td>셜록호텔</td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i></li></td>
+                        </tr>
+                    </table>
+                        <ul>
+                            <li>게스트 2명</li>
+                            <li>2020년 10월 26일 -> 2020년 10월 27일</li>
+                        </ul>
+                        <ul>
+                            <li>주의사항</li>
+                            <li>반려동물 동반 불가</li>
+                            <li>퇴실시간 준수</li>
+                            <li>당일 취소 불가</li>
+                        </ul>
+                        <p id="pay_price">₩70,000</p>
+                </section>
+            </div>
+            <div id="footerWrap">
+                <footer>
+                        <dl>
+                            <dt>이 페이지는 포트폴리오를 위해서 제작되었습니다.</dt>
+                            <dd>상호 및 서비스는 실제와 무관합니다.</dd>
+                        </dl>
+                        <br>
+                            <br>
+                            <hr>
+                            <p>© 2020 portfolio, Inc. All rights reserved</p>
+                </footer>
+            </div>
+
+            <script>
+            //필요한 엘리먼트들을 선택한다.
+            const openButton = document.getElementById("open");
+            const openJoin = document.querySelector(".openJoin")
+
+            const modal = document.querySelector(".modal");
+            const join = document.querySelector(".join");
+        
+            const overlay = modal.querySelector(".md_overlay");
+            const join_lay = join.querySelector(".join_overlay");
+
+            const content = modal.querySelector(".md_content");
+            const join_tent = join.querySelector(".join_content");
+
+            const closeButton = modal.querySelector(".close");
+            const coloseJoin = join.querySelector(".close");
+            //동작함수
+            const openModal = () => {
+                modal.classList.remove("hidden");
+                overlay.style.display = 'block';
+                content.style.display= 'block';
+                
+
+                document.querySelector('html').classList.add('scrollDisable')
+                document.querySelector('body').classList.add('scrollDisable')
+            }
+
+            const joinModal = () => {
+                join.classList.remove("hidden");
+                join_lay.style.display = 'block';
+                join_tent.style.display = 'block';
+                
+                document.querySelector('html').classList.add('scrollDisable')
+                document.querySelector('body').classList.add('scrollDisable')
+            }
+
+            const closeModal = () => {
+                modal.classList.add("hidden");
+                join.classList.add("hidden");
+
+                document.querySelector('html').classList.remove('scrollDisable')
+                document.querySelector('body').classList.remove('scrollDisable')
+            }
+
+
+            //클릭 이벤트
+            openButton.addEventListener("click", openModal);
+            openJoin.addEventListener("click", joinModal);
+            closeButton.addEventListener("click", closeModal);
+            coloseJoin.addEventListener("click",closeModal);
+
+            </script>
+    </body>
+</html>

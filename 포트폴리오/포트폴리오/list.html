@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔리스트</title>
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div id="container">
+            <div id="back_Wrap">
+                <div class="headerWrap">
+                    <header>
+                        <h1><a href="#">sherlock<br>Homes</a></h1>
+                        <nav id="gnb">
+                            <h2 class="hidden">회원메뉴</h2>
+                            <ul>
+                                <li id="join"><a href="#">회원가입</a></li>
+                                <li id="login"><a href="#">로그인</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+    
+
+                <div id="formWrap">
+                    <form>
+                        <fieldset>
+                            <legend class="hidden">검색</legend>
+                            <label for="location" class="hidden">위치</label>
+                            <input type="text" id="location" value="도시 또는 호텔 이름">
+                            <label for="checkIn" class="hidden">체크인</label>
+                            <input type="date" id="checkIn" data-placeholder="체크인">
+                            <label for="checkOut" class="hidden">체크아웃</label>
+                            <input type="date" id="checkOut" data-placeholder="체크아웃">
+                            <label for="people" class="hidden">인원</label>
+                            <input type="number" id="people">
+                            <label for="adult" class="hidden">성인</label> 
+                            <input type="number" id="adult" class="hidden">
+                            <label for="child" class="hidden">어린이</label>
+                            <input type="number" id="child" class="hidden">
+                            <label for="infant" class="hidden">유아</label>
+                            <input type="number" id="infant" class="hidden">
+                            <input type="button" value="검색" id="button">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div id="listSection">
+                <section id="hotelsList">
+                    <p>숙박 nnn건 · mm월 dd일 - mm월 dd일  · 게스트 nn명</p>
+                    <h2>지도에서 선택한 지역의 숙소</h2>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="hotels">
+                        <i class="material-icons" id="favorite_border">favorite_border</i>
+                        <a>
+                            <ul>
+                                <li><a href="#"><img src="images/room1.jpg" alt=""></a></li>
+                                <li class="nm">셜록호텔</li>
+                                <li class="room">스탠다드 · 디럭스</li>
+                                <li class="option">무선인터넷 · 무료 주차 · 조식 제공</li>
+                                <li class="score"><i class="material-icons" id="star">star</i>5.0</li>
+                                <li class="price Lodg">₩50,000<span class="price_s">/1박</span></li>
+                                <li class="price Rent">₩20,000<span class="price_s">/대실</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                </section>
+                <section id="map"></section>
+            </div>
+            <div id="footerWrap">
+                <footer>
+                        <dl>
+                            <dt>이 페이지는 포트폴리오를 위해서 제작되었습니다.</dt>
+                            <dd>상호 및 서비스는 실제와 무관합니다.</dd>
+                        </dl>
+                        <br>
+                            <br>
+                            <hr>
+                            <p>© 2020 portfolio, Inc. All rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

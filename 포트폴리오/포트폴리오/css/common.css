@@ -1,0 +1,49 @@
+@charset "utf-8";
+@font-face { font-family: 'NIXGONL-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+header, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, figure, form, fieldset, input, table, th, td { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: #333;}
+body {font-family: 'Noto Serif KR', serif;  }
+.hidden { position: absolute; left: -9999px;}
+input { font-family: 'Noto Serif KR', serif; }
+/* 헤더 */
+header h1 a {display: inline-block; font-family: 'NIXGONL-Vb';  font-size: 30px; color:#821752;}
+#back_Wrap { margin: 0 auto; width:100%; 
+    box-shadow: 0px 0px 15px #808080; background-color: #fff;}
+#back_Wrap:after{ content:""; display: block; padding-bottom:1%;}            
+.headerWrap { width:1200px; margin: 0 auto;}
+header ul li{ display: inline-block; }
+
+/*gnb*/
+#gnb { float: right;}
+#gnb ul { float: left;}
+#gnb li a {margin-right: 30px; font-size: 18px; color: #fff;}
+
+/*search*/
+#formWrap {clear: both; width: 1200px; margin: 0 auto; display: inline;}
+form { width:1200px; margin: 0 auto;}
+fieldset {text-align: center; border: none;}
+fieldset input {outline:none; border: 1px solid lightgray; height:34px; vertical-align:middle; 
+border-radius:22px; width:150px; box-sizing:border-box; padding:0 10px; }
+#checkIn::before {content: attr(data-placeholder); width: 100%;}
+#checkOut::before {content: attr(data-placeholder); width: 100%;}
+fieldset input[type="button"]{ background:#821752;
+                    color:#fff; width:50px; cursor:pointer; }
+#dropDown { color: #fff;}
+
+
+
+/*footer*/
+#footerWrap {  
+    width: 100%; background-color:#f5f5f5; height: 100%;
+    position:fixed; 
+    left:0px; 
+    bottom:0px; 
+    height:300px; 
+    width:100%;  } 
+footer { width: 1200px; margin: 0 auto; color:#010a43; padding :30px 30px 0 0;}
+
+
+
+

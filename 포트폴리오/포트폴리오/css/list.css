@@ -1,0 +1,21 @@
+
+@charset "utf-8";
+
+/*list*/
+#listSection { display: block; display: grid; grid-template-columns: 700px auto;}
+#hotelsList h2 { font-size: 25px; }
+.hotels { height: 100%; height: 250px; border-top:1px solid darkgrey;}
+.hotels ul {height: 100%; height: 250px; margin-top: 20px; }
+.hotels ul li { text-indent: 10px; }
+.hotels ul li #star { font-size: 18px; text-indent: 0; position: relative; top: 3px; color:#821752; }
+.hotels ul li img { float:left; width: 300px; height: 200px; border-radius: 10px; }
+.hotels #favorite_border { width: 5%; font-size: 40px;  margin-top: 15px ;float: right; text-align: end; display: inline; color:#821752;}
+.hotels ul .nm { font-size: 25px; font-weight: 700;}
+.hotels ul .room, .option {font-size: 18px; color: darkgrey; }
+.hotels ul .score { font-size: 18px;}
+.hotels ul .price { text-align: end; font-size: 20px; font-weight: 800;}
+.hotels ul li .price_s { font-weight: 300; font-size: 16px;}
+
+#hotelsList { width: 100%;  padding: 20px;}
+#hotelsList p { font-size: 15px;}
+#hotelsList h2 { margin-bottom: 20px;}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셜록홈즈</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- index 파일은 menuTemp.css가 아닌 index.css파일로만 적용 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--템플릿부분 시작-->
+    <div id="container">
+        <div id="back_Wrap">
+            <div class="headerWrap">
+                <header>
+                    <h1><a href="#">sherlock<br>Homes</a></h1>
+                    <nav id="gnb">
+                        <h2 class="hidden">회원메뉴</h2>
+                            <ul>
+                                <li><a href="#" class="openJoin">회원가입</a></li>
+                                <li><a href="#" id="open">로그인</a></li>
+                            </ul>
+                    </nav>
+                </header>
+            </div>
+   
+            <div class="modal hidden">
+                <div class="md_overlay"></div>
+                <div class="md_content">
+                        <p class="close"><i class="material-icons" style="cursor: pointer;">clear</i></p>
+                        <p class="login_t">login</p>
+                    <form id="loginFrm">
+                        <input type="text" id="user_id" placeholder="ID">
+                        <input type="password" id="user_password" placeholder="password">
+                        <button type="submit" class="login-button"><i class="material-icons">keyboard_arrow_right</i></button>
+                    </form>
+                    <p class="check" id="check_pw">아이디/비밀번호를 잊으셨나요?<a href="#">아이디</a>/<a href="#">비밀번호찾기</a></p>
+                        <p class="check">회원가입을 안하셨나요?<a href="#" id="move_join" onclick="">회원가입</a></p>
+                </div>
+            </div>
+
+            <div class="join hidden">
+                <div class="join_overlay"></div>
+                <div class="join_content">
+                        <p class="close"><i class="material-icons" style="cursor: pointer;">clear</i></p>
+                        <p class="join_t">join</p>
+                    <form id="joinFrm">
+                        <input type="text" id="join_id" placeholder="ID">
+                        <input type="button" id="id_check" value="중복확인">
+                        <input type="email" id="user_email" placeholder="e-mail">
+                        <input type="text" id="user_nm" placeholder="이름">
+                        <input type="password" id="join_password" placeholder="password">
+                        <input type="password" id="join_passwordChk" placeholder="password check">
+                        <button type="submit" class="join-button"><i class="material-icons">keyboard_arrow_right</i></button>
+                        <input type="checkbox" id="user_agree" value="agree">
+                        <label for="user_agree"><span id="agree_span"></span>개인정보 제공에 동의합니다.</label>
+                        
+                    </form>
+                    <p id="msg">아이디를 중복확인해주세요</p>
+                </div>
+            </div>
+
+            <div id="formWrap">
+                <form>
+                    <fieldset>
+                        <legend class="hidden">검색</legend>
+                        <label for="location" class="hidden">위치</label>
+                        <input type="text" id="location" value="도시 또는 호텔 이름">
+                        <label for="checkIn" class="hidden">체크인</label>
+                        <input type="date" id="checkIn" data-placeholder="체크인">
+                        <label for="checkOut" class="hidden">체크아웃</label>
+                        <input type="date" id="checkOut" data-placeholder="체크아웃">
+                        <label for="people" class="hidden">인원</label>
+                        <label for="adult" class="hidden">성인</label> 
+                        <input type="number" id="adult">
+                        <label for="child" class="hidden">어린이</label>
+                        <input type="number" id="child">
+                        <label for="infant" class="hidden">유아</label>
+                        <input type="number" id="infant">
+                        <input type="button" value="검색" id="button">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--템플릿부분 끝-->
+        <!-- jsp에 넣을부분 여기서부터-->
+        <div id="section_h">
+            <section id= "content1">
+                <h2>최저가 호텔</h2>
+                <a href="#">
+                    <div id="cheapHotels1" class="hotels">
+                        <dl>
+                            <dt>셜록호텔</dt>
+                            <dd>평점 4.5</dd>
+                            <dd>서울시 사랑구</dd>
+                        </dl>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="cheapHotels2" class="hotels">
+                        <dl>
+                            <dt>홈즈호텔</dt>
+                            <dd>평점 4.5</dd>
+                            <dd>서울시 사랑구</dd>
+                        </dl>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="cheapHotels3" class="hotels">
+                        <dl>
+                            <dt>런던호텔</dt>
+                            <dd>평점 4.5</dd>
+                            <dd>서울시 사랑구</dd>
+                        </dl>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="cheapHotels4" class="hotels">
+                        <dl>
+                            <dt>왓슨호텔</dt>
+                            <dd>평점 4.5</dd>
+                            <dd>서울시 사랑구</dd>
+                        </dl>
+                    </div>
+                </a>
+            </section>
+            <section id= "content2" class="hidden">   
+                <h2>베스트 호텔</h2>
+                <div id="cheapHotels5" class="hotels">
+                    <dl>
+                        <dt>셜록호텔</dt>
+                        <dd>평점 4.5</dd>
+                        <dd>서울시 사랑구</dd>
+                    </dl>
+                </div>
+                <div id="cheapHotels6" class="hotels">
+                    <dl>
+                    <dt>홈즈호텔</dt>
+                    <dd>평점 4.5</dd>
+                    <dd>서울시 사랑구</dd>
+                    </dl>
+                </div>
+                <div id="cheapHotels7" class="hotels">
+                    <dl>
+                        <dt>런던호텔</dt>
+                        <dd>평점 4.5</dd>
+                        <dd>서울시 사랑구</dd>
+                    </dl>
+                </div>
+                <div id="cheapHotels8" class="hotels">
+                    <dl>
+                        <dt>왓슨호텔</dt>
+                        <dd>평점 4.5</dd>
+                        <dd>서울시 사랑구</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        <div class="section_t">
+            <div class="section_wrap">
+                <h2>테마 호텔</h2>
+                <section id="content3">
+                    <div id="themaWrap">
+                        <div class="grid item1"><a href="#"><p>풀빌라 럭셔리 호캉스</p></a></div>
+                        <div class="grid item2"><a href="#"><p>프라이빗한 독채 펜션</p></a></div>
+                        <div class="grid item3"><a href="#"><p>호텔에서 즐기는 오션 뷰</p></a></div>  
+                        <div class="grid item4"><a href="#"><p>실내 풀장 완비</p></a></div>
+                    </div>
+                </section>
+                <section id="content4" class="hidden">
+                    <h2>테마 호텔2</h2>
+                    <ul id="themaWrap">
+                        <li class="grid item1"><a href="#"><img src="images/room4.jpg"></a></li>
+                        <li class="grid item2"><a href="#"><img src="images/room5.jpg"></a></li>
+                        <li class="grid item3"><a href="#"><img src="images/room1.jpg"></a></li>  
+                        <li class="grid item4"><a href="#"><img src="images/room7.jpg"></a></li>
+                    </ul>
+                </section>
+                <section id="content5" class="hidden">
+                    <h2>테마 호텔3</h2>
+                    <ul id="themaWrap">
+                        <li class="grid item1"><a href="#"><img src="images/room4.jpg"></a></li>
+                        <li class="grid item2"><a href="#"><img src="images/room5.jpg"></a></li>
+                        <li class="grid item3"><a href="#"><img src="images/room1.jpg"></a></li>  
+                        <li class="grid item4"><a href="#"><img src="images/room7.jpg"></a></li>
+                    </ul>
+                </section>
+                <section id="content6" class="hidden">
+                    <h2>테마 호텔4</h2>
+                    <ul id="themaWrap4">
+                        <li class="grid item1"><a href="#"><img src="images/room4.jpg"></a></li>
+                        <li class="grid item2"><a href="#"><img src="images/room5.jpg"></a></li>
+                        <li class="grid item3"><a href="#"><img src="images/room1.jpg"></a></li>  
+                        <li class="grid item4"><a href="#"><img src="images/room7.jpg"></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- jsp에 넣을부분 끝 -->
+        <!--템플릿부분 시작-->
+        <div id="footerWrap">
+            <footer>
+                    <dl>
+                        <dt>이 페이지는 포트폴리오를 위해서 제작되었습니다.</dt>
+                        <dd>상호 및 서비스는 실제와 무관합니다.</dd>
+                    </dl>
+                    <br>
+                        <br>
+                        <hr>
+                        <p>© 2020 portfolio, Inc. All rights reserved</p>
+            </footer>
+        </div>
+        <!--템플릿부분 끝-->
+    
+    </div>
+    <script>
+        var limit =8;
+
+        window.onload = function() {
+        
+        for(var i=1; i<=limit; i++) {
+
+            let hotelImgs = document.createElement('div')
+            let base_addr = `images/room${i}.jpg`
+
+            hotelImgs.style.backgroundImage = `url(${base_addr})`;
+
+            var div = document.querySelector('#cheapHotels' + i)
+            div.prepend(hotelImgs)
+
+            hotelImgs.style.width = '300px';
+            hotelImgs.style.height = '300px';
+            hotelImgs.style.margin = '0 auto';
+            hotelImgs.style.backgroundSize = 'cover';
+            hotelImgs.style.borderTopLeftRadius = '10px';
+            hotelImgs.style.borderTopRightRadius = '10px';
+        }
+    
+    }
+		//필요한 엘리먼트들을 선택한다.
+		const openButton = document.getElementById("open");
+        const openJoin = document.querySelector(".openJoin");
+        const movejoin = document.getElementById("move_join");
+
+		const modal = document.querySelector(".modal");
+        const join = document.querySelector(".join");
+      
+		const overlay = modal.querySelector(".md_overlay");
+        const join_lay = join.querySelector(".join_overlay");
+
+        const content = modal.querySelector(".md_content");
+        const join_tent = join.querySelector(".join_content");
+
+		const closeButton = modal.querySelector(".close");
+        const coloseJoin = join.querySelector(".close");
+
+        
+		//동작함수
+		const openModal = () => {
+			modal.classList.remove("hidden");
+            overlay.style.display = 'block';
+            content.style.display= 'block';
+            
+
+            document.querySelector('html').classList.add('scrollDisable')
+            document.querySelector('body').classList.add('scrollDisable')
+		}
+
+        const joinModal = () => {
+			join.classList.remove("hidden");
+            join_lay.style.display = 'block';
+            join_tent.style.display = 'block';
+            
+            document.querySelector('html').classList.add('scrollDisable')
+            document.querySelector('body').classList.add('scrollDisable')
+		}
+
+        const closeModal = () => {
+			modal.classList.add("hidden");
+            join.classList.add("hidden");
+
+            document.querySelector('html').classList.remove('scrollDisable')
+            document.querySelector('body').classList.remove('scrollDisable')
+		}
+
+        const loginToJoin = () => {
+            modal.classList.add("hidden");
+            join.classList.remove("hidden");
+
+            join_lay.style.display = 'block';
+            join_tent.style.display = 'block';
+
+            document.querySelector('html').classList.add('scrollDisable')
+            document.querySelector('body').classList.add('scrollDisable')   
+        }
+
+		//클릭 이벤트
+		openButton.addEventListener("click", openModal);
+        openJoin.addEventListener("click", joinModal);
+		closeButton.addEventListener("click", closeModal);
+        coloseJoin.addEventListener("click",closeModal);
+        movejoin.addEventListener("click",loginToJoin);
+
+    </script>
+</body>
+</html>

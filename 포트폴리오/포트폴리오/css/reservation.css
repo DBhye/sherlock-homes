@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+table tr td img { width: 60px; height: 60px;}
+.date_check {background-color:#821752; color: #ffffff;}
+#reservationWrap { display: grid; width:1200px; grid-template-columns: 700px 400px; margin: 0 auto;}
+.reservation { border: 1px solid black; }
+.pay1, .pay2, .pay3 { height: 150px;}
+.pay1{ display: inline-block; grid-area: 1/1;}
+.pay1 h2 { text-indent: 20px;}
+.pay1 table { margin-left: 20px;}
+.pay1 tr #address { width: 100px;}
+.pay1 table .date_check { width: 45px; text-align: center;}
+.pay2 input{ display: block;}
+.pay2 form { }
+.pay2 input[type=button] { display: inline;}
+.pay3 { grid-area: 3/ 1;}
+.pay4 { grid-area: 1/ 2; display: inline-block;}

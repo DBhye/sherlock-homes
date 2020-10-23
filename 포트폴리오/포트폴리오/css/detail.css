@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*section1 */
+#detail { width:1200px;margin: 0 auto; display: grid; grid-template-columns: 1 1; row-gap: 20px;}
+/*grid 조정*/
+.item1 { grid-column: 1 / span 2;}
+.item2 { grid-column: 1 / span 2;}
+.item3 { grid-column: 1 / span 2;}
+.item4 { grid-area: 4/1;}
+.item4 p { display: inline;} 
+.item5 { grid-area: 4/2; }
+
+
+#infoWrap ul li { font-size: 25px;}
+#info {  text-indent: 610px;}
+#infoWrap h2 { font-size: 40px; font-weight: 600; margin-top: 30px;}
+#infoWrap ul #star { color:#821752;}
+#infoWrap ul #score { font-size: 20px;}
+#infoWrap ul #score span { font-size: 15px; color: grey;}
+#infoWrap ul #wifi { width: 560px; display: inline-block; border-top: 1px solid lightgray; }
+#infoWrap ul #wifi, #infoWrap ul  #parking, #infoWrap ul #breakfast { font-size: 18px;}
+#infoWrap ul li i { position: relative; top:5px; font-size: 25px;} 
+#infoWrap ul img {width: 600px; height: 450px; margin-right:20px; border-radius: 20px; float: left; position: relative; bottom: 70px;}
+#infoWrap li i {font-size: 40px; }
+#infoWrap li { font-size: 18px;}
+#standard { height: 208px;}
+.price { font-weight: 900; text-align: end; font-size: 20px; }
+.rent, .lodgment{ text-align: end; font-size: 20px; color:#821752; }
+.room_nm {font-size: 25px;text-indent: 20px;}
+.room_people { text-indent: 20px; color: grey;}
+.room_photo img { width: 276.63px; height: 208px; border-radius: 10px; margin-left: 20px;}
+#standard, #deluxe { border-top: 1px solid lightgray; padding: 20px;}
+#standard img, #deluxe img { float: right; } 
+#deluxe { clear: both; border-bottom:1px solid lightgray; height: 208px;}
+/*숙소공지*/
+#option {border-bottom: 1px solid lightgray; font-size: 16px;}
+#option ul { padding: 20px;}
+.notice {float: left; margin-left: 20px; font-weight: 600;}
+.notice_content { margin-left: 280px; margin-bottom: 10px;}
+.notice_content1, .notice_content2, .notice_content3 {
+     margin-left: 280px; margin-bottom: 5px;
+}
+/*review*/
+
+#star_r { color:#821752; position: relative; top:5px}
+.item4 p { font-size: 20px;}
+.item4 ul { margin-top: 25px; font-size: 18px;}
+.item5 ul { margin-top: 25px; font-size: 18px;}
+.review { margin-bottom: 20px;}
+.review img { border-radius: 100%; width: 45px; height: 45px; float: left;}
+.review_d { font-size: 16px; color: grey;}
+.review_c{ display: block; margin-top: 10px; font-size: 16px;}
+#review_btn { background-color: #ffffff; color: black; padding: 10px; padding: 15px; border: 1px solid black; border-radius: 10px;
+            font-size: 15px; font-weight: 600; margin-bottom: 30px;}
+#review_btn:hover { background-color: #eeeeee; }
+
+
